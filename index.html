@@ -2,7 +2,10 @@
 <html lang = "en">
 	<head>
 		<meta charset = "utf-8">
+		<meta name = "view-port" content = "width=device-width, initial-scale = 1.0">
 		<link rel="stylesheet" href="css/index.css">
+		<link rel="stylesheet" href="css/slick.css">
+		<link rel="stylesheet" href="css/animate.css">
 		<link rel="stylesheet" href="css/1.1 grid.css.css">
 		<link rel="stylesheet" href="css/media-query.css">
 		<link rel="stylesheet" href="font-awesome-4.6.3/css/font-awesome.css">
@@ -16,22 +19,23 @@
 				<div class="row">
 					<img src="img/logo.png" alt="varietyfood logo" class="logo">
 					<ul class="main-nav">
-						<li><a href="#">Food Delivery</a></li>
-						<li><a href="#">How it works</a></li>
-						<li><a href="#">Our cities</a></li>
-						<li><a href="#">Sign up</a></li>
+						<li><a href="#delivery">Food Delivery</a></li>
+						<li><a href="#how">How it works</a></li>
+						<li><a href="#cities">Our cities</a></li>
+						<li><a href="#form">Sign up</a></li>
 					</ul>
+					<a class="mobile-nav"><i class="fa fa-bars"></i></a>
 				</div>
 			</nav>
 		
 			<div class="hero-text">
 				<h1>Who needs junk food.<br>hello healthy meals.</h1>
-				<a href="#" class="btn btn-full">Wanna eat?</a>
-				<a href="#" class="btn btn-ghost">Let's go</a>
+				<a href="#scrollplan" class="btn btn-full">Wanna eat?</a>
+				<a href="#scrollfeast" class="btn btn-ghost scroll-to-feast">Let's go</a>
 			</div>
 		</header>
 		
-		<section class="section-features">
+		<section class="section-features slide-nav" id="delivery">
 				<div class="row">
 					<h2>
 						Get food fast &mdash; not fast food.
@@ -68,7 +72,8 @@
 					</div>
 				</div>
 			</section>
-			<section class="section-meal">
+			
+			<section class="section-meal" id="scrollfeast">
 				<ul class="meals clear-fix">
 					<li>
 						<figure class="meal-photo">
@@ -82,7 +87,7 @@
 					</li>
 					<li>
 						<figure class="meal-photo">
-							<img src="img/cake.jpg" alt="Spicy Chinese Fish">
+							<img src="img/7.jpg" alt="Spicy Chinese Fish">
 						</figure>
 					</li>
 					<li>
@@ -115,7 +120,7 @@
 					</li>
 				</ul>
 			</section>
-			<section class="section-how">
+			<section class="section-how" id="how">
 				<div class="row">
 					<h2>How it works &mdash; Simple as 1, 2, 3</h2>
 				</div>
@@ -143,11 +148,11 @@
 					</div>
 				</div>
 			</section>
-			<section class="cities">
+			<section class="cities" id="cities">
 				<div class="row">
 					<h2>We're currently in these cities</h2>
 				</div>
-				<div class="row">
+				<div class="row js-animate">
 					<div class="col span-1-of-4">
 						<img src="img/lisbon-3.jpg" alt="lisbon" class="city-img">
 						<h3>Lisbon</h3>
@@ -249,22 +254,22 @@
 				</div>
 			</section>
 			<section class="section-price">
-				<div class="row">
+				<div class="row" id="scrollplan">
 					<h2>Start eating healthy today</h2>
 				</div>
 				<div class="row">
-					<div class="col span-1-of-3">
-						<div class="plan-box">
+					<div class="col span-1-of-3 unique">
+						<div class="plan-box js-animate2">
 							<div>
 								<h3>Premium</h3>
-								<p class="plan-price">399$ <span>per month</span></p>
+								<p class="plan-price">$399 <span>per month</span></p>
 								<p class="plan-price-meal">That’s only 13.30$ per meal</p>
 							</div>
 							<div>
 								<ul>
 									<li><i class="fa fa-check icon-small"></i>1 meal every day</li>
 									<li><i class="fa fa-check icon-small"></i>Order 24/7</li>
-									<li><i class="fa fa-check icon-small"></i>Access to newest creations</li>
+									<li><i class="fa fa-check icon-small"></i>Access to latest recipes</li>
 									<li><i class="fa fa-check icon-small"></i>Free delivery</li>
 								</ul>
 							</div>
@@ -273,18 +278,18 @@
 							</div>
 						</div>
 					</div>
-					<div class="col span-1-of-3">
+					<div class="col span-1-of-3 unique">
 						<div class="plan-box">
 							<div>
 								<h3>Pro</h3>
-								<p class="plan-price">149$ <span>per month</span></p>
-								<p class="plan-price-meal">That’s only 14.90$ per meal</p>
+								<p class="plan-price">$149 <span>per month</span></p>
+								<p class="plan-price-meal">That’s only $14.90 per meal</p>
 							</div>
 							<div>
 								<ul>
 									<li><i class="fa fa-check icon-small"></i>1 meal every day</li>
 									<li><i class="fa fa-check icon-small"></i>Order 24/7</li>
-									<li><i class="fa fa-check icon-small"></i>Access to newest creations</li>
+									<li><i class="fa fa-check icon-small"></i>Access to latest recipes</li>
 									<li><i class="fa fa-check icon-small"></i>Free delivery</li>
 								</ul>
 							</div>
@@ -293,17 +298,17 @@
 							</div>
 						</div>
 					</div>
-					<div class="col span-1-of-3">
+					<div class="col span-1-of-3 unique">
 						<div class="plan-box">
 							<div>
 								<h3>Starter</h3>
-								<p class="plan-price">19$ <span>per meal</span></p>
+								<p class="plan-price">$19 <span>per meal</span></p>
 								<p class="plan-price-meal">&nbsp;</p>
 							</div>
 							<div>
 								<ul>
 									<li><i class="fa fa-check icon-small"></i>1 meal</li>
-									<li><i class="fa fa-check icon-small"></i>Order from 8 am to 12 pm</li>
+									<li><i class="fa fa-check icon-small"></i>Order from 8am to 12pm</li>
 									<li><i class="fa fa-close icon-small"></i></li>
 									<li><i class="fa fa-check icon-small"></i>Free delivery</li>
 								</ul>
@@ -315,7 +320,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="section-form">
+			<section class="section-form" id="form">
 				<div class="row">
 					<h2>Contact Form</h2>
 				</div>
@@ -401,5 +406,10 @@
 						<p>Copyright &copy; Varietyfood 2019. All rights reserved.<span>DonLini.io</span></p>
 				</div>
 			</footer>
+			
+			<script src="js/jquery-3.4.1.min.js"></script>
+			<script src="js/jquery.waypoints.min.js"></script>
+			<script src="slick.min.js"></script>
+			<script src="js/index.js"></script>
 	</body>
 </html>

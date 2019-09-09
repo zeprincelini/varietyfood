@@ -12,6 +12,12 @@ html{
 	font-weight: 300px;
 	font-size:20px;
 	text-rendering: optimizeLegibility;
+	overflow-x: hidden;
+	scroll-behavior: smooth;
+}
+
+body{
+	overflow-x: hidden;
 }
 
 .clear-fix{zoom: 1;}
@@ -95,6 +101,47 @@ header{
 	font-size: 90%;
 	border-bottom: 2px solid transparent;
 	transition: border-bottom 0.2s;
+}
+
+/*-----mobile-nav------*/
+.mobile-nav{
+	float: right;
+	cursor:pointer;
+	display: none;
+}
+.fa-bars{
+	font-size: 200% !important;
+	color: #fff;
+}
+.mobile-nav .fa-close{
+	font-size: 200% !important;
+	color: #fff;
+}
+
+/*-------------------*/
+/*-----sticky--------*/
+/*-------------------*/
+
+.sticky{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background: rgba(0, 0, 0, 0.8);
+	z-index: 9999;
+	
+}
+
+.sticky .main-nav{
+	margin-top: 10px;
+}
+
+.sticky .main-nav li a:visited,
+.sticky .main-nav li a:link{
+	padding: 3px 0;
+}
+.sticky .logo{
+	height: 50px;
 }
 
 
@@ -285,8 +332,7 @@ input[type=submit]:hover{
 	text-align: center;
 	padding: 5px;
 	float: left;
-	font-size: 100%;
-	font-weight: bold;
+	font-size: 140%;
 	margin-right: 10px;
 	transition: color 0.5s, background-color 0.5s; 
 }
@@ -537,4 +583,12 @@ footer span{
 
 .section-footer ul li:last-child{
 	margin-right: 0;
+}
+
+/*------ANIMATION-------*/
+.js-animate{
+	opacity: 0;
+}
+.js-animate.animated{
+	opacity: 1;
 }
