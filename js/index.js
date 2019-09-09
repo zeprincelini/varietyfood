@@ -43,12 +43,19 @@ $(document).ready(function(){
 		}*/
 		nav.slideToggle(200);
 		
-		if(icon.hasClass('fa-bars')){
+		$(window).resize(function(){
+			if($(window).width()>768)
+			  $('.main-nav').css('display','block');
+			else
+			  $('.main-nav').css('display','none');
+	  });
+		
+		/*if(icon.hasClass('fa-bars')){
 			icon.addClass('.mobile-nav fa-close')
 			icon.removeClass('fa-bars');
 		}else{
 			icon.removeClass('.mobile-nav fa-close')
 			icon.addClass('fa-bars');
-		}
+		}*/
 	});
 });
